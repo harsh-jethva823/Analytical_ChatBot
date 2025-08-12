@@ -1,0 +1,157 @@
+##version: "3.1"
+##
+##stories:
+##
+##- story: happy path
+##  steps:
+##  - intent: greet
+##  - action: utter_greet
+##  - intent: mood_great
+##  - action: utter_happy
+##
+##- story: sad path 1
+##  steps:
+##  - intent: greet
+##  - action: utter_greet
+##  - intent: mood_unhappy
+##  - action: utter_cheer_up
+##  - action: utter_did_that_help
+##  - intent: affirm
+##  - action: utter_happy
+##
+##- story: sad path 2
+##  steps:
+##  - intent: greet
+##  - action: utter_greet
+##  - intent: mood_unhappy
+##  - action: utter_cheer_up
+##  - action: utter_did_that_help
+##  - intent: deny
+##  - action: utter_goodbye
+#version: "3.1"
+#
+#stories:
+#
+#- story: happy path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+#
+#- story: admission inquiry
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: ask_admission
+#  - action: utter_admission_info
+#  - intent: ask_fees
+#  - action: utter_fees_info
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: course inquiry
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: ask_courses
+#  - action: utter_courses_info
+#  - intent: ask_facilities
+#  - action: utter_facilities_info
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+#- story: scholarship inquiry
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: ask_scholarships
+#  - action: utter_scholarships_info
+#  - intent: ask_application_deadline
+#  - action: utter_application_deadline
+#  - intent: goodbye
+#  - action: utter_goodbye
+#
+
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: admission inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_admission
+  - action: utter_admission_info
+  - intent: ask_fees
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: course inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_courses
+  - action: utter_courses_info
+  - intent: ask_facilities
+  - action: utter_facilities_info
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scholarship inquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_scholarships
+  - action: utter_scholarships_info
+  - intent: ask_application_deadline
+  - action: utter_application_deadline
+  - intent: goodbye
+  - action: utter_goodbye
