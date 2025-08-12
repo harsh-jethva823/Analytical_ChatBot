@@ -1,0 +1,76 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_admission
+  - ask_courses
+  - ask_fees
+  - ask_facilities
+  - ask_scholarships
+  - ask_campus_life
+  - ask_application_deadline
+  - ask_contact_info
+  - mca_course_details
+
+entities:
+  - course_name
+  - facility_type
+  - course
+
+responses:
+  utter_greet:
+  - text: "Hello! I'm your college inquiry assistant. How can I help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Goodbye! Feel free to contact our admissions office if you need more help."
+
+  utter_iamabot:
+  - text: "I am your college inquiry chatbot, powered by Rasa!"
+
+  utter_admission_info:
+  - text: "For admissions, you need to complete your 12th grade with minimum 60% marks. We accept applications from March to June each year. You'll need to submit your academic certificates, entrance exam scores, and application form."
+
+  utter_courses_info:
+  - text: "We offer undergraduate programs in Engineering, Medicine, Commerce, Arts, and Science. Our popular courses include Computer Science, Mechanical Engineering, MBBS, BBA, and B.Sc. Would you like specific information about any course?"
+
+#  utter_fees_info:
+#  - text: "Annual fees vary by program: Engineering (₹1,50,000), Medicine (₹5,00,000), Commerce/Arts (₹50,000), Science (₹75,000). This includes tuition, lab fees, and library access. Additional hostel fees are ₹80,000 per year."
+
+  utter_facilities_info:
+  - text: "Our campus features modern laboratories, a well-stocked library, sports complex, cafeteria, medical center, Wi-Fi connectivity, and separate hostels for boys and girls. We also have auditoriums and seminar halls for events."
+
+  utter_scholarships_info:
+  - text: "We offer merit-based scholarships (up to 50% fee waiver for top 10% students), need-based financial aid, sports scholarships, and government scholarship programs for SC/ST/OBC students. Apply early for better chances!"
+
+  utter_campus_life_info:
+  - text: "Campus life includes cultural festivals, technical competitions, sports tournaments, student clubs, and regular seminars by industry experts. We have active student councils and various hobby clubs like music, drama, and photography."
+
+  utter_application_deadline:
+  - text: "Application deadlines are: Early admission (March 31st), Regular admission (May 31st), Late admission (June 30th). Submit your application online through our college portal with all required documents."
+
+  utter_contact_info:
+  - text: "Contact us at: Phone: +91-123-456-7890, Email: admissions@college.edu, Address: College Road, City - 123456. Admission office hours: 9 AM to 5 PM, Monday to Saturday."
+
+  utter_mca_course_details:
+    - text: "The MCA (Master of Computer Applications) program at our college is a 2-year postgraduate degree focusing on software development, data science, AI, and IT management. Eligibility: BCA or equivalent degree with at least 50% marks."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
